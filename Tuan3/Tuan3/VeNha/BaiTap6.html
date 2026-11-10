@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Học web chuẩn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .portfolio {
+      max-width: 760px;
+      margin: 20px auto;
+      background-color: #f7f7f7;
+    }
+    .portfolio h2 {
+      margin: 0;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+    }
+    .portfolio h2::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      margin: 12px auto 0;
+      background-color: #2a9d9d;
+    }
+    .list-tab {
+      padding: 22px 0;
+      text-align: center;
+    }
+    .list-tab li {
+      display: inline-block;
+      margin: 0 8px;
+    }
+    .list-tab a {
+      font-size: 11px;
+      font-weight: bold;
+      color: #333;
+    }
+    .list-tab li:first-child a {
+      color: #2a9d9d;
+    }
+    .galerry {
+      background-color: #fff;
+      padding: 4px 0;
+    }
+    .galerry::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .galerry li {
+      float: left;
+      width: 33.3333%;
+      box-sizing: border-box;
+      padding: 3px;
+    }
+    .galerry a {
+      position: relative;
+      display: block;
+      aspect-ratio: 350 / 260;
+      background-color: #9ccc7c;
+    }
+    .galerry a::before {
+      content: "Học Web Chuẩn";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .galerry img {
+      position: relative;
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <section class="portfolio">
+    <h2>MY PORTFOLIO</h2>
+    <ul class="list-tab">
+      <li><a href="./">All</a></li>
+      <li><a href="./">Web App</a></li>
+      <li><a href="./">UI/UX</a></li>
+      <li><a href="./">Graphics Design</a></li>
+      <li><a href="./">Mobile App</a></li>
+      <li><a href="./">Branding</a></li>
+      <li><a href="./">Marketing</a></li>
+    </ul>
+    <ul class="galerry">
+      <li><a href="./"><img src="images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="images/img_350x260.png" alt=""></a></li>
+    </ul>
+  </section>
+</body>
+</html>
