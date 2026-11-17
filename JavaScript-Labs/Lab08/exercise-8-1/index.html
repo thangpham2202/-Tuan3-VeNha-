@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 8.1 - Enabling/Disabling JavaScript</title>
+  <link rel="stylesheet" href="../css/lab08.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    #status { font-size: 1.4em; padding: 16px 20px; border: 2px solid #333; display: inline-block; }
+    #status.on  { background: #d9f7d9; }
+    #status.off { background: #f9d6d6; }
+  </style>
+</head>
+<body>
+  <header><h1>Exercise 8.1 – Enabling/Disabling JavaScript</h1></header>
+  <p>Trang kiểm tra trạng thái JavaScript của trình duyệt (bản thực hành cục bộ tương đương trang JavaScriptTest.php).</p>
+
+  <!-- Hiển thị khi JavaScript TẮT -->
+  <p id="status" class="off">You have JavaScript disabled</p>
+  <noscript><p>Thẻ noscript: trình duyệt đang tắt JavaScript.</p></noscript>
+
+  <!-- Khi JavaScript BẬT, đoạn script bên dưới sẽ thay đổi thông báo -->
+  <script>
+    var box = document.getElementById("status");
+    box.className = "on";
+    box.innerHTML = "You have JavaScript enabled";
+  </script>
+</body>
+</html>

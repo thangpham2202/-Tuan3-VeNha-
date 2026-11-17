@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Lab 8 - Exercise 8.8</title>
+   <link rel="stylesheet" type="text/css" href="../css/lab08.css" />
+   <script type="text/javascript" language="javascript" src="js/lab08-exercise08.js"></script>
+</head>
+<body>
+<header>
+  <h1>Illustrating Function Usage</h1>
+</header>
+
+<h2>Output will go here</h2>
+
+<script>
+   // add function calls here
+   for (count = 1; count < 6; count++) {
+      document.write(outputBox(count));
+   }
+   // Bước 9: biến box có phạm vi local (khai báo bằng var trong hàm)
+   // nên dòng dưới sẽ báo lỗi "box is not defined" trong Console.
+   // Bước 10: bỏ "var" ở biến box trong hàm thì box trở thành biến global.
+   console.log(typeof box === "undefined" ? "box is not defined (local scope)" : box);
+</script>
+
+<footer>
+  <p><em>Copyright &copy; 2015</em></p>
+</footer>
+</body>
+</html>
