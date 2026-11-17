@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Lab 10 - Exercise 10.1 - Set up jQuery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/lab10.css">
+
+    <!-- Bước 2: nạp jQuery từ CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Bước 3: nếu CDN không khả dụng thì nạp bản jQuery cục bộ -->
+    <script type="text/javascript">
+        window.jQuery ||
+            document.write('<script src="../js/jquery-3.1.1.min.js"><\/script>');
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>Exercise 10.1 – Set up jQuery</h1>
+    <p>Trang kiểm tra việc nạp thư viện jQuery (CDN và bản dự phòng cục bộ).</p>
+    <div class="alert alert-info" id="jqStatus">Đang kiểm tra jQuery...</div>
+</div>
+
+<script type="text/javascript">
+    if (window.jQuery) {
+        // phát hiện nguồn đã nạp thư viện
+        var src = "";
+        $("script[src*='jquery']").each(function () { src += $(this).attr("src") + " "; });
+        $("#jqStatus").html("jQuery đã được nạp thành công. Phiên bản: <strong>" + $.fn.jquery + "</strong>");
+        console.log("jQuery version " + $.fn.jquery);
+    } else {
+        document.getElementById("jqStatus").innerHTML = "Không nạp được jQuery!";
+    }
+</script>
+</body>
+</html>

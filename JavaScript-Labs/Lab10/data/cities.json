@@ -1,0 +1,18 @@
+[
+  {"id": 1,  "name": "Athens"},
+  {"id": 2,  "name": "Banff"},
+  {"id": 3,  "name": "Battle"},
+  {"id": 4,  "name": "Berlin"},
+  {"id": 5,  "name": "Budapest"},
+  {"id": 6,  "name": "Calgary"},
+  {"id": 7,  "name": "Florence"},
+  {"id": 8,  "name": "Halifax"},
+  {"id": 9,  "name": "London"},
+  {"id": 10, "name": "Lunenburg"},
+  {"id": 11, "name": "Madrid"},
+  {"id": 12, "name": "Nassau"},
+  {"id": 13, "name": "Paris"},
+  {"id": 14, "name": "Rome"},
+  {"id": 15, "name": "Toronto"},
+  {"id": 16, "name": "Vancouver"}
+]
