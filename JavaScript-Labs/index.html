@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Labs – Phạm Văn Thắng</title>
+  <meta name="description" content="Portfolio thực hành JavaScript: Lab 08, Lab 09, Lab 10 – môn Phát triển ứng dụng thương mại điện tử.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">JS<span>Labs</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false">&#9776;</button>
+    <nav id="mainNav">
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#labs">Các bài Lab</a>
+      <a href="#kien-thuc">Kiến thức</a>
+      <a href="#demo">Demo</a>
+      <a href="#tong-ket">Tổng kết</a>
+      <button id="themeToggle" class="theme-btn" aria-label="Đổi giao diện sáng/tối">&#9680;</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <img class="avatar" src="images/avatar.jpg" alt="Ảnh đại diện của Phạm Văn Thắng" width="180" height="180">
+      <div>
+        <p class="eyebrow">Phát triển ứng dụng thương mại điện tử &middot; Chương 4</p>
+        <h1>Phạm Văn Thắng</h1>
+        <ul class="info">
+          <li><b>Mã số sinh viên:</b> 31241027009</li>
+          <li><b>Lớp học phần:</b> 26C1INF50902701</li>
+          <li><b>GitHub:</b> <a href="https://github.com/thangpham2202" target="_blank" rel="noopener">https://github.com/thangpham2202</a></li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn" href="#labs">Xem các bài Lab</a>
+          <a class="btn ghost" href="https://github.com/thangpham2202/-Tuan3-VeNha-" target="_blank" rel="noopener">Repository</a>
+        </div>
+        <p class="clock" id="clock" aria-live="off"></p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="wrap" id="gioi-thieu">
+      <h2 class="sec-title">Giới thiệu về bài thực hành</h2>
+      <div class="two-col">
+        <p>Bộ thực hành gồm ba bài Lab nhằm giúp tôi đi từ nền tảng ngôn ngữ JavaScript đến việc làm cho trang web
+        tương tác: <b>Lab 08</b> rèn cú pháp, hàm, mảng và đối tượng; <b>Lab 09</b> thao tác DOM và xử lý sự kiện;
+        <b>Lab 10</b> dùng thư viện jQuery để chọn phần tử, tạo hiệu ứng và gọi dữ liệu bất đồng bộ.</p>
+        <p>JavaScript là ngôn ngữ chạy trực tiếp trên trình duyệt, chịu trách nhiệm phần hành vi của giao diện:
+        kiểm tra dữ liệu nhập, phản hồi thao tác của người dùng, cập nhật nội dung mà không tải lại trang và trao đổi
+        dữ liệu với máy chủ. Đây là nền tảng cho hầu hết tính năng tương tác của một website thương mại điện tử.</p>
+      </div>
+      <ul class="stats" id="stats">
+        <li><b data-count="3">0</b><span>bài Lab</span></li>
+        <li><b data-count="30">0</b><span>Exercise</span></li>
+        <li><b data-count="3">0</b><span>chủ đề: JS, DOM, jQuery</span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="labs">
+      <div class="wrap">
+        <h2 class="sec-title">Danh sách và liên kết đến các bài Lab</h2>
+        <div class="table-scroll">
+          <table class="lab-table">
+            <thead><tr><th>Bài Lab</th><th>Nội dung</th><th>Liên kết</th></tr></thead>
+            <tbody>
+              <tr><td><b>Lab 08</b></td><td>JavaScript 1: Language Foundations</td><td><a href="Lab08/">Lab08/</a></td></tr>
+              <tr><td><b>Lab 09</b></td><td>JavaScript 2: DOM and Events</td><td><a href="Lab09/">Lab09/</a></td></tr>
+              <tr><td><b>Lab 10</b></td><td>JavaScript 3: jQuery</td><td><a href="Lab10/">Lab10/</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="lab-cards">
+      <article class="lab-card c1">
+        <span class="lab-tag">Lab 08</span>
+        <h3>JavaScript 1: Language Foundations</h3>
+        <p>12 Exercise &middot; mã nguồn, trang chạy thử và mô tả từng bài.</p>
+        <a class="btn" href="Lab08/">Vào Lab 08 &rarr;</a>
+      </article>
+      <article class="lab-card c2">
+        <span class="lab-tag">Lab 09</span>
+        <h3>JavaScript 2: DOM and Events</h3>
+        <p>8 Exercise &middot; mã nguồn, trang chạy thử và mô tả từng bài.</p>
+        <a class="btn" href="Lab09/">Vào Lab 09 &rarr;</a>
+      </article>
+      <article class="lab-card c3">
+        <span class="lab-tag">Lab 10</span>
+        <h3>JavaScript 3: jQuery</h3>
+        <p>10 Exercise &middot; mã nguồn, trang chạy thử và mô tả từng bài.</p>
+        <a class="btn" href="Lab10/">Vào Lab 10 &rarr;</a>
+      </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="kien-thuc">
+      <h2 class="sec-title">Những kiến thức và kỹ năng đã học được</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" role="tab" data-tab="t8" aria-selected="true">Lab 08</button>
+        <button class="tab" role="tab" data-tab="t9" aria-selected="false">Lab 09</button>
+        <button class="tab" role="tab" data-tab="t10" aria-selected="false">Lab 10</button>
+      </div>
+      <div class="tab-panel active" id="t8" role="tabpanel">
+        <h3>Lab 08 – JavaScript 1: Language Foundations</h3>
+        <ul>
+          <li>Biết hai cách đưa JavaScript vào HTML (nhúng trong thẻ script và liên kết tệp .js) và vì sao nên đặt mã trong thư mục riêng.</li>
+          <li>Hiểu biến, kiểu dữ liệu, toán tử so sánh <code>==</code> với <code>===</code>, phạm vi biến cục bộ và toàn cục.</li>
+          <li>Làm việc với các đối tượng có sẵn như String, Date, Math; dùng mảng (push, unshift, vòng lặp) để dựng bảng dữ liệu.</li>
+          <li>Viết hàm có tham số và giá trị trả về; hiểu hàm cũng là một đối tượng nên có thể lồng nhau, gán vào biến hoặc truyền làm tham số.</li>
+          <li>Tạo đối tượng bằng nhiều cú pháp (object literal, constructor) và duyệt thuộc tính bằng <code>for..in</code>.</li>
+          <li>Dùng Console của trình duyệt để phát hiện lỗi cú pháp và theo dõi giá trị biến.</li>
+        </ul>
+      </div>
+      <div class="tab-panel" id="t9" role="tabpanel">
+        <h3>Lab 09 – JavaScript 2: DOM and Events</h3>
+        <ul>
+          <li>Chọn phần tử bằng id, tên thẻ, lớp CSS và bộ chọn CSS; đọc và sửa nội dung, thuộc tính, kiểu hiển thị.</li>
+          <li>Di chuyển trong cây DOM (nút cha, nút anh em, nút con) và phân biệt nút văn bản với nút phần tử.</li>
+          <li>Tạo, thêm và xóa phần tử HTML bằng <code>createElement</code>, <code>appendChild</code>, <code>removeChild</code>.</li>
+          <li>Gắn trình xử lý bằng <code>addEventListener</code> cho click, mouseover, mouseout, focus, blur, submit; hiểu vì sao cần chờ sự kiện load.</li>
+          <li>Kiểm tra biểu mẫu: phát hiện ô trống, chặn gửi bằng <code>preventDefault()</code> và hiển thị thông báo lỗi.</li>
+          <li>Đặt breakpoint trong DevTools để quan sát đối tượng sự kiện và gỡ lỗi.</li>
+        </ul>
+      </div>
+      <div class="tab-panel" id="t10" role="tabpanel">
+        <h3>Lab 10 – JavaScript 3: jQuery</h3>
+        <ul>
+          <li>Nạp jQuery từ CDN kèm bản dự phòng cục bộ để trang vẫn hoạt động khi không có Internet.</li>
+          <li>Dùng bộ chọn cơ bản và nâng cao, các phương thức <code>val</code>, <code>html</code>, <code>attr</code>, <code>css</code>, <code>addClass</code>; hiểu jQuery luôn trả về một tập phần tử nên không cần vòng lặp.</li>
+          <li>Xử lý sự kiện bằng <code>on()</code>, document ready, chaining và <code>off()</code>.</li>
+          <li>Chèn phần tử bằng <code>after</code>, <code>before</code>, <code>append</code>, <code>prepend</code> và các dạng <code>appendTo</code>, <code>insertBefore</code>.</li>
+          <li>Tạo hiệu ứng fade, slide và <code>animate()</code> nhiều thuộc tính theo chuỗi; dựng popup xem trước ảnh theo vị trí chuột.</li>
+          <li>Gửi yêu cầu GET bằng <code>$.get()</code>, xử lý JSON và dùng đối tượng jqXHR (<code>done</code>, <code>fail</code>, <code>always</code>) để bắt lỗi.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band" id="demo">
+      <div class="wrap">
+        <h2 class="sec-title">Demo ứng dụng vào thương mại điện tử</h2>
+        <p class="lead">Mô hình nhỏ dưới đây dùng đúng các kỹ thuật đã học: DOM, sự kiện, kiểm tra biểu mẫu và định dạng số.</p>
+        <div class="demo-grid">
+          <div class="panel-box">
+            <h3>Giỏ hàng</h3>
+            <ul class="cart" id="cartList"></ul>
+            <p class="total">Tổng cộng: <b id="cartTotal">0 ₫</b></p>
+          </div>
+          <div class="panel-box">
+            <h3>Đăng ký nhận tin</h3>
+            <form id="signupForm" novalidate>
+              <label for="demoName">Họ tên</label>
+              <input id="demoName" type="text" placeholder="Nguyễn Văn A">
+              <label for="demoEmail">Email</label>
+              <input id="demoEmail" type="text" placeholder="ten@example.com">
+              <button class="btn" type="submit">Đăng ký</button>
+            </form>
+            <div id="formMsg" class="form-msg" role="status"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="tong-ket">
+      <h2 class="sec-title">Tự đánh giá sau khi hoàn thành</h2>
+      <blockquote class="reflection">
+        <p>Qua ba bài Lab, tôi nắm được cách nhúng JavaScript vào trang HTML, làm việc với biến, hàm, mảng và đối tượng,
+        thao tác DOM, xử lý sự kiện và dùng jQuery để chọn phần tử, tạo hiệu ứng và gửi yêu cầu GET.
+        Lab 08 hữu ích vì là nền tảng ngôn ngữ, đặc biệt là phạm vi biến và việc hàm cũng là một đối tượng.
+        Lab 10 khó nhất với tôi vì phải xử lý yêu cầu bất đồng bộ và các tình huống lỗi của jqXHR.
+        Kiến thức này có thể dùng để kiểm tra biểu mẫu đăng ký, cập nhật số lượng và tổng tiền trong giỏ hàng,
+        xem trước ảnh sản phẩm và nạp danh sách sản phẩm mà không cần tải lại trang.
+        Tôi cần luyện thêm JavaScript hiện đại (ES6, fetch, async/await), gỡ lỗi bằng DevTools và cách tổ chức mã nguồn gọn gàng hơn.</p>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Phạm Văn Thắng &middot; 31241027009 &middot; 26C1INF50902701</p>
+    <p><a href="https://github.com/thangpham2202/-Tuan3-VeNha-" target="_blank" rel="noopener">GitHub Repository</a> &middot;
+       <a href="https://thangpham2202.github.io/-Tuan3-VeNha-/JavaScript-Labs/" target="_blank" rel="noopener">GitHub Pages</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
