@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mục lục - Thực hành Front-End Nâng cao</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #f4f4f9;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 30px; 
+            background: #fff; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #00529c; text-align: center; }
+        h2 { color: #d32f2f; margin-top: 30px; border-bottom: 2px solid #eee; padding-bottom: 5px; font-size: 1.5em; }
+        ul { margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+        .info-box {
+            background: #004d40;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .info-box h2 {
+            color: white;
+            border-bottom: none;
+            margin-top: 0;
+            padding-bottom: 0;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .info-box p {
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+        .info-box a {
+            color: #80cbc4;
+            text-decoration: none;
+        }
+        .info-box a:hover {
+            text-decoration: underline;
+        }
+        .summary-box { 
+            background: #e9f5ff; 
+            padding: 15px 20px; 
+            border-left: 5px solid #00529c; 
+            border-radius: 4px;
+        }
+        .summary-box h2 {
+            margin-top: 0;
+            color: #00529c;
+        }
+        .btn { 
+            display: inline-block; 
+            text-decoration: none; 
+            color: white; 
+            background: #00529c; 
+            padding: 12px 20px; 
+            border-radius: 5px; 
+            font-weight: bold;
+            transition: background 0.3s; 
+        }
+        .btn:hover { background: #003d73; }
+        .footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bài Thực Hành Front-End Nâng Cao</h1>
+        
+        <!-- Phần Thông tin cá nhân -->
+        <div class="info-box">
+            <h2>Phạm Văn Thắng</h2>
+            <p><strong>Mã số sinh viên:</strong> 31241027009</p>
+            <p><strong>Lớp học phần:</strong> 26C1INF50902701</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/thangpham2202" target="_blank">https://github.com/thangpham2202</a></p>
+        </div>
+
+        <div class="summary-box">
+            <h2>Tóm tắt nội dung:</h2>
+            <ul>
+                <li><strong>Game Dino (DevTools):</strong> Tương tác với JavaScript thông qua Console để tùy chỉnh thông số game (bỏ qua game over, thay đổi <code>setSpeed</code>, <code>setJumpVelocity</code>).</li>
+                <li><strong>Responsive Design:</strong> Thực hành điều chỉnh giao diện hiển thị cho các kích thước màn hình khác nhau (Mobile, Tablet, Print) bằng <code>@media</code> và xử lý ảnh linh hoạt với thẻ <code>&lt;picture&gt;</code>.</li>
+            </ul>
+        </div>
+
+        <h2 style="color: #d32f2f;">Danh sách file bài tập</h2>
+        <p>Bấm vào liên kết bên dưới để kiểm tra kết quả giao diện Responsive đã thiết kế:</p>
+        <a href="Bai1.html" class="btn">Mở tệp Bai1.html (Bài tập Responsive)</a>
+        
+        <div class="footer">
+            Thư mục thực hành FE - Sinh viên lưu trữ và kiểm tra kết quả trực tiếp trên trình duyệt.
+        </div>
+    </div>
+</body>
+</html>
