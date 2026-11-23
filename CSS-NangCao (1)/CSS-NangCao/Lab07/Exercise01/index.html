@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 7.1 – Document Flow</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Exercise 7.1 – Document Flow</h1>
+<p>Phần tử <b>block</b> chiếm trọn một dòng, phần tử <b>inline</b> nằm nối tiếp trên cùng dòng. Thuộc tính <code>display</code> cho phép đổi cách hiển thị này.</p>
+
+<h2>1. Mặc định: div là block, span là inline</h2>
+<div class="demo">
+  <div class="b">Div 1 (block)</div>
+  <div class="b">Div 2 (block)</div>
+  <span class="i">Span 1 (inline)</span>
+  <span class="i">Span 2 (inline)</span>
+  <span class="i">Span 3 (inline)</span>
+</div>
+
+<h2>2. Đổi display: div → inline, span → block</h2>
+<div class="demo swap">
+  <div class="b">Div 1 (inline)</div>
+  <div class="b">Div 2 (inline)</div>
+  <span class="i">Span 1 (block)</span>
+  <span class="i">Span 2 (block)</span>
+  <span class="i">Span 3 (block)</span>
+</div>
+
+<h2>3. Menu ngang: li inline-block, a block</h2>
+<ul class="menu">
+  <li><a href="#">Trang chủ</a></li>
+  <li><a href="#">Sản phẩm</a></li>
+  <li><a href="#">Khuyến mãi</a></li>
+  <li><a href="#">Liên hệ</a></li>
+</ul>
+
+<h2>4. display: none – phần tử bị loại khỏi document flow</h2>
+<p>Đoạn 1: hiển thị bình thường.</p>
+<p class="hidden">Đoạn 2: bị ẩn bằng display: none.</p>
+<p>Đoạn 3: tự động dịch lên vì đoạn 2 không còn chiếm chỗ.</p>
+<p class="back"><a href="../index.html">&larr; Danh sách Exercise Lab 07</a> &nbsp;|&nbsp; <a href="../../index.html">Trang chủ CSS nâng cao</a></p>
+</body>
+</html>

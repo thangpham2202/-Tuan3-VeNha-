@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 7.3 – Absolute Positioning</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Exercise 7.3 – Absolute Positioning</h1>
+<p>Phần tử <code>position: absolute</code> bị loại khỏi document flow và được định vị so với <b>ancestor gần nhất có thuộc tính position</b> (khác static).</p>
+
+<h2>1. Thẻ sản phẩm có position: relative làm mốc</h2>
+<div class="card">
+  <img src="../images/p1.png" alt="Áo thun">
+  <span class="badge">-30%</span>
+  <span class="wish">&#9825; Yêu thích</span>
+  <div class="info">
+    <b>Áo thun cổ tròn</b><br>150.000đ
+  </div>
+</div>
+
+<h2>2. Không có ancestor positioned: mốc là toàn bộ trang</h2>
+<div class="plain">
+  <p>Khung này không có position nên nhãn bên dưới bám theo góc của trang.</p>
+  <span class="corner">Góc trang (absolute)</span>
+</div>
+<p class="back"><a href="../index.html">&larr; Danh sách Exercise Lab 07</a> &nbsp;|&nbsp; <a href="../../index.html">Trang chủ CSS nâng cao</a></p>
+</body>
+</html>

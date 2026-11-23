@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 7.8 – Floating and Clearing</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Exercise 7.8 – Floating and Clearing</h1>
+<p>Thuộc tính <code>clear</code> ngăn phần tử bị chảy bao quanh phần tử float phía trước.</p>
+
+<h2>1. Footer không dùng clear: chữ chảy quanh các khối float</h2>
+<div class="demo">
+  <div class="f f1">Float 1<br>cao 120px</div>
+  <div class="f f2">Float 2<br>cao 80px</div>
+  <div class="f f3">Float 3<br>cao 100px</div>
+  <div class="foot">Footer (không clear) – nội dung bị đẩy sang cạnh các khối float, bố cục bị vỡ.</div>
+</div>
+
+<h2>2. Footer dùng clear: both</h2>
+<div class="demo">
+  <div class="f f1">Float 1<br>cao 120px</div>
+  <div class="f f2">Float 2<br>cao 80px</div>
+  <div class="f f3">Float 3<br>cao 100px</div>
+  <div class="foot cleared">Footer (clear: both) – nằm gọn bên dưới tất cả các khối float.</div>
+</div>
+
+<h2>3. clear: left chỉ tránh float bên trái</h2>
+<div class="demo">
+  <div class="f f1">Float trái</div>
+  <div class="f f2 r">Float phải</div>
+  <div class="foot clearleft">Footer (clear: left) – tránh khối trái, vẫn chảy cạnh khối phải.</div>
+</div>
+<p class="back"><a href="../index.html">&larr; Danh sách Exercise Lab 07</a> &nbsp;|&nbsp; <a href="../../index.html">Trang chủ CSS nâng cao</a></p>
+</body>
+</html>

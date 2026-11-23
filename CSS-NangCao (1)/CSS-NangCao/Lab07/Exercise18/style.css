@@ -1,0 +1,17 @@
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-60px); } }
+@keyframes spin   { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes pulse  { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.5); } }
+@keyframes slide  { from { margin-left: 0; } to { margin-left: 60px; } }
+@keyframes color  { 0% { background: #e74c3c; } 33% { background: #f1c40f; } 66% { background: #27ae60; } 100% { background: #e74c3c; } }
+@keyframes fadein { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+.row { display: flex; flex-wrap: wrap; gap: 20px; padding: 80px 10px 20px; }
+.cell { width: 130px; text-align: center; }
+.shape { width: 60px; height: 60px; margin: 0 auto 12px; background: #3498db; }
+
+.bounce { animation-name: bounce; animation-duration: 1s; animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+.spin   { animation: spin 2s linear infinite; }
+.pulse  { border-radius: 50%; animation: pulse 1.5s ease-in-out infinite; }
+.slide  { margin-left: 0; animation: slide 3s ease-in-out infinite alternate; }
+.color  { animation: color 4s linear infinite; }
+.delay  { animation: fadein 1s ease 2s 3 both; }

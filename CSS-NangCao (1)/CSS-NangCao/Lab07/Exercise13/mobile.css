@@ -1,0 +1,9 @@
+/* Áp dụng khi chiều rộng màn hình nhỏ hơn 768px */
+.logo { text-align: center; margin-bottom: 8px; }
+.menu li { float: none; border-top: 1px solid #4b657d; }
+.menu a { text-align: center; }
+.card { float: none; width: 100%; }
+
+/* Mobile: ẩn menu dọc, thay bằng danh sách chọn (select) */
+.menu { display: none; }
+.menu-select { display: block; width: 100%; padding: 10px; font-size: 16px; }

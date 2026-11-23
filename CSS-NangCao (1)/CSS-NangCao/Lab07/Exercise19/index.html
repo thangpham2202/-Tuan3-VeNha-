@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 7.19 – Using Bootstrap</title>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MINI SHOP</a>
+    </div>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Trang chủ</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Exercise 7.19 – Bootstrap</h1>
+    <p>Hệ thống lưới 12 cột, navbar, panel, list-group và button có sẵn giúp dựng giao diện nhanh hơn.</p>
+    <p><a class="btn btn-primary btn-lg" href="#">Xem sản phẩm</a> <a class="btn btn-default btn-lg" href="../index.html">Về danh sách</a></p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><h3 class="panel-title">Sản phẩm nổi bật (cột col-md-8)</h3></div>
+        <div class="panel-body">
+          <!-- Cột lồng nhau (nested columns) -->
+          <div class="row">
+            <div class="col-sm-6"><img class="img-responsive" src="../images/p1.png" alt=""><p>Áo thun</p></div>
+            <div class="col-sm-6"><img class="img-responsive" src="../images/p2.png" alt=""><p>Giày thể thao</p></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4"><img class="img-responsive" src="../images/p3.png" alt=""></div>
+            <div class="col-xs-4"><img class="img-responsive" src="../images/p4.png" alt=""></div>
+            <div class="col-xs-4"><img class="img-responsive" src="../images/p5.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">Danh mục (col-md-4)</div>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">Thời trang</a>
+          <a href="#" class="list-group-item">Giày dép</a>
+          <a href="#" class="list-group-item">Phụ kiện <span class="badge">12</span></a>
+          <a href="#" class="list-group-item">Đồ điện tử <span class="badge">5</span></a>
+        </div>
+      </div>
+      <button type="button" class="btn btn-success btn-block">Thêm vào giỏ hàng</button>
+      <button type="button" class="btn btn-danger btn-block">Xóa</button>
+    </div>
+  </div>
+  <p class="back"><a href="../index.html">&larr; Danh sách Exercise Lab 07</a> &nbsp;|&nbsp; <a href="../../index.html">Trang chủ CSS nâng cao</a></p>
+</div>
+
+<script src="../bootstrap/js/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

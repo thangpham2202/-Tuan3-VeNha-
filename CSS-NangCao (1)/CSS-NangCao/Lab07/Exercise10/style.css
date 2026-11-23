@@ -1,0 +1,15 @@
+#wrapper { width: 900px; max-width: 100%; margin: 0 auto; border: 1px solid #999; }
+#header, #footer { background: #34495e; color: #fff; padding: 14px; }
+
+/* Cột trái: float, cột phải: margin-left */
+#sidebar {
+  float: left;
+  width: 200px;
+  background: #ecf0f1;
+  padding: 10px;
+}
+#content {
+  margin-left: 220px;
+  padding: 10px;
+}
+#footer { clear: both; }

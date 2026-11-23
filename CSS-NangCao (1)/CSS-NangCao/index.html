@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS nâng cao – Lab 07 | Phạm Văn Thắng</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="inner">
+    <span class="brand">CSS nâng cao</span>
+    <nav>
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#bai-tap">Bài thực hành</a>
+      <a href="#kien-thuc">Kiến thức</a>
+      <a href="#tu-danh-gia">Tự đánh giá</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="inner hero-grid">
+    <img class="avatar" src="images/avatar.jpg" alt="Ảnh đại diện">
+    <div class="who">
+      <p class="eyebrow">Phát triển ứng dụng thương mại điện tử – Chương 5</p>
+      <h1>Phạm Văn Thắng</h1>
+      <ul class="info">
+        <li><b>Mã số sinh viên:</b> 31241027009</li>
+        <li><b>Lớp học phần:</b> 26C1INF50902701</li>
+        <li><b>GitHub:</b> <a href="https://github.com/thangpham2202" target="_blank" rel="noopener">https://github.com/thangpham2202</a></li>
+      </ul>
+      <a class="cta" href="#bai-tap">Xem các Exercise</a>
+      <a class="cta ghost" href="Lab07/index.html">Danh sách Lab 07</a>
+    </div>
+  </div>
+</section>
+
+<main class="inner">
+
+  <section id="gioi-thieu">
+    <h2>Giới thiệu về bài thực hành</h2>
+    <p>Lab 07 – <b>Advanced CSS: Layout</b> giúp em làm chủ cách trình duyệt sắp xếp các phần tử trên trang: từ document flow, định vị (relative, absolute), xếp lớp bằng z-index, đến bố cục nhiều cột bằng float. Em cũng thực hành thiết kế giao diện responsive với media queries và viewport, tạo hiệu ứng tương tác bằng transforms, transitions, filters, animations và dùng Bootstrap grid để dựng giao diện nhanh.</p>
+    <p>CSS nâng cao là nền tảng để xây dựng bố cục chuyên nghiệp, giao diện hiển thị tốt trên cả máy tính lẫn điện thoại và những hiệu ứng tương tác giúp website thương mại điện tử hấp dẫn, dễ dùng hơn.</p>
+  </section>
+
+  <section id="bai-tap">
+    <h2>Danh sách và liên kết đến các Exercise</h2>
+    <div class="cards">
+    <article class="card">
+      <span class="range">7.1 – 7.4</span>
+      <h3>Document flow, positioning, z-index</h3>
+      <ul><li>Document Flow</li><li>Relative Positioning</li><li>Absolute Positioning</li><li>Stacking Using Z-Index</li></ul>
+      <div class="chips"><a class="chip" href="Lab07/Exercise01/index.html">7.1</a><a class="chip" href="Lab07/Exercise02/index.html">7.2</a><a class="chip" href="Lab07/Exercise03/index.html">7.3</a><a class="chip" href="Lab07/Exercise04/index.html">7.4</a></div>
+    </article>
+    <article class="card">
+      <span class="range">7.5 – 7.9</span>
+      <h3>Float, clear và positioning</h3>
+      <ul><li>Floating Elements</li><li>Floating in a Container</li><li>Floating Multiple Items</li><li>Floating and Clearing</li><li>Using Positioning</li></ul>
+      <div class="chips"><a class="chip" href="Lab07/Exercise05/index.html">7.5</a><a class="chip" href="Lab07/Exercise06/index.html">7.6</a><a class="chip" href="Lab07/Exercise07/index.html">7.7</a><a class="chip" href="Lab07/Exercise08/index.html">7.8</a><a class="chip" href="Lab07/Exercise09/index.html">7.9</a></div>
+    </article>
+    <article class="card">
+      <span class="range">7.10 – 7.13</span>
+      <h3>Multi-column layout, responsive design, viewport</h3>
+      <ul><li>Two-Column Layout</li><li>Three-Column Layout</li><li>Media Queries</li><li>Setting the Viewport</li></ul>
+      <div class="chips"><a class="chip" href="Lab07/Exercise10/index.html">7.10</a><a class="chip" href="Lab07/Exercise11/index.html">7.11</a><a class="chip" href="Lab07/Exercise12/index.html">7.12</a><a class="chip" href="Lab07/Exercise13/index.html">7.13</a></div>
+    </article>
+    <article class="card">
+      <span class="range">7.14 – 7.18</span>
+      <h3>Transforms, transitions, filters, animations</h3>
+      <ul><li>Transforms</li><li>Transitions</li><li>More Transitions</li><li>Filters</li><li>Animations</li></ul>
+      <div class="chips"><a class="chip" href="Lab07/Exercise14/index.html">7.14</a><a class="chip" href="Lab07/Exercise15/index.html">7.15</a><a class="chip" href="Lab07/Exercise16/index.html">7.16</a><a class="chip" href="Lab07/Exercise17/index.html">7.17</a><a class="chip" href="Lab07/Exercise18/index.html">7.18</a></div>
+    </article>
+    <article class="card">
+      <span class="range">7.19</span>
+      <h3>Bootstrap grid system</h3>
+      <ul><li>Using Bootstrap</li></ul>
+      <div class="chips"><a class="chip" href="Lab07/Exercise19/index.html">7.19</a></div>
+    </article>
+    </div>
+  </section>
+
+  <section id="kien-thuc">
+    <h2>Những kiến thức và kỹ năng đã học được</h2>
+    <div class="skills">
+    <div class="skill"><h3>Document flow, định vị và xếp lớp</h3><p>Em hiểu phần tử block xuống dòng còn inline nằm cùng dòng, và có thể đổi bằng display. Relative dịch phần tử khỏi vị trí gốc nhưng vẫn giữ chỗ; absolute bị loại khỏi flow và bám theo ancestor có position; z-index quyết định thứ tự chồng lớp trong cùng một stacking context.</p></div>
+    <div class="skill"><h3>Float và clear</h3><p>Float đẩy phần tử sang trái/phải để nội dung chảy bao quanh. Vì float rời khỏi flow nên container bị xẹp, cần xử lý bằng clear, overflow: hidden hoặc clearfix.</p></div>
+    <div class="skill"><h3>Bố cục hai cột, ba cột</h3><p>Cột bên được float hoặc absolute, cột giữa dùng margin để chừa chỗ. Cách này cho em thấy rõ cơ chế hoạt động của layout trước khi dùng các công cụ hiện đại.</p></div>
+    <div class="skill"><h3>Media queries và viewport</h3><p>Em tách stylesheet desktop/mobile bằng media query theo chiều rộng màn hình, và hiểu thẻ meta viewport là bắt buộc để trình duyệt điện thoại áp dụng đúng giao diện mobile.</p></div>
+    <div class="skill"><h3>Transforms, transitions, filters, animations</h3><p>Transform biến đổi hình dạng, transition làm mượt thay đổi khi hover, filter chỉnh ảnh bằng CSS, còn @keyframes tạo chuyển động lặp lại hoặc theo kịch bản.</p></div>
+    <div class="skill"><h3>Bootstrap grid system</h3><p>Lưới 12 cột cùng navbar, jumbotron, panel, list-group và button giúp dựng giao diện responsive nhanh hơn, kể cả với cột lồng nhau.</p></div>
+    </div>
+  </section>
+
+  <section id="tu-danh-gia">
+    <h2>Tự đánh giá sau khi hoàn thành</h2>
+    <blockquote>
+      <p>Qua Lab 07, em nắm được các kỹ thuật CSS nâng cao quan trọng: đổi document flow bằng display, định vị relative/absolute, xếp lớp bằng z-index, bố trí bằng float và clear, cùng media queries, viewport và các hiệu ứng transform, transition, filter, animation.</p>
+      <p>Exercise hữu ích nhất với em là 7.12–7.13 vì giúp hiểu cách một trang thích ứng cả máy tính lẫn điện thoại. Exercise 7.4 về z-index khó nhất vì thứ tự chồng lớp phụ thuộc vào stacking context của phần tử cha.</p>
+      <p>Với website thương mại điện tử, em có thể dùng float hoặc bố cục nhiều cột cho trang danh mục sản phẩm, media queries để đổi menu và số cột trên điện thoại, transition/transform cho hiệu ứng hover thẻ sản phẩm và Bootstrap grid để dựng layout nhanh hơn.</p>
+    </blockquote>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Phạm Văn Thắng – 31241027009 – 26C1INF50902701</p>
+  <p><a href="https://github.com/thangpham2202/-Tuan3-VeNha-" target="_blank" rel="noopener">GitHub Repository</a> · <a href="https://thangpham2202.github.io/-Tuan3-VeNha-/CSS-NangCao/">GitHub Pages</a></p>
+</footer>
+
+</body>
+</html>

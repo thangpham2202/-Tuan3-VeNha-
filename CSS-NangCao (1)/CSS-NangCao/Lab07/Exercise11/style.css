@@ -1,0 +1,8 @@
+#wrapper { width: 960px; max-width: 100%; margin: 0 auto; border: 1px solid #999; }
+#header, #footer { background: #34495e; color: #fff; padding: 14px; }
+
+/* Ba cột bằng positioning */
+#main { position: relative; }
+#left  { position: absolute; top: 0; left: 0;  width: 180px; background: #ecf0f1; padding: 10px; }
+#right { position: absolute; top: 0; right: 0; width: 180px; background: #fdebd0; padding: 10px; }
+#center { margin: 0 200px; padding: 10px; }

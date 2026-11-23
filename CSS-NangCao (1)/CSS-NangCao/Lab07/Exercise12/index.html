@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Exercise 7.12 – Media Queries</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" media="screen and (min-width: 768px)" href="desktop.css">
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="mobile.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Exercise 7.12 – Media Queries</h1>
+<p class="note">Trang này <b>chưa</b> khai báo thẻ viewport: trên điện thoại thật, trình duyệt vẫn coi màn hình rộng 980px nên giao diện mobile không được áp dụng. Đây là lý do cần Exercise 7.13.</p>
+
+<div id="top" class="header">
+  <div class="logo">MINI SHOP</div>
+  <div class="nav">
+    <ul class="menu">
+      <li><a href="#top">Trang chủ</a></li>
+      <li><a href="#products">Sản phẩm</a></li>
+      <li><a href="#promo">Khuyến mãi</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+  </div>
+</div>
+<div id="products" class="grid clearfix">
+  <div class="card"><img src="../images/p1.png" alt=""><p>Sản phẩm 1</p></div>
+  <div class="card"><img src="../images/p2.png" alt=""><p>Sản phẩm 2</p></div>
+  <div class="card"><img src="../images/p3.png" alt=""><p>Sản phẩm 3</p></div>
+  <div class="card"><img src="../images/p4.png" alt=""><p>Sản phẩm 4</p></div>
+  <div class="card"><img src="../images/p5.png" alt=""><p>Sản phẩm 5</p></div>
+  <div class="card"><img src="../images/p6.png" alt=""><p>Sản phẩm 6</p></div>
+</div>
+<div id="promo" class="promo">Khuyến mãi tháng này: giảm đến 30%</div>
+<div id="contact" class="footer">Liên hệ: shop@example.com</div>
+<p class="back"><a href="../index.html">&larr; Danh sách Exercise Lab 07</a> &nbsp;|&nbsp; <a href="../../index.html">Trang chủ CSS nâng cao</a></p>
+</body>
+</html>

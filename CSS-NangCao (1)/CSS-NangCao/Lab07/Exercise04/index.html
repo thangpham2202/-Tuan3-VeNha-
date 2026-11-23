@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 7.4 – Stacking Using Z-Index</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Exercise 7.4 – Stacking Using Z-Index</h1>
+<p><code>z-index</code> quyết định thứ tự chồng lớp của các phần tử đã được định vị. Số lớn hơn nằm phía trên.</p>
+
+<h2>1. Ba lớp chồng nhau (z-index 1, 2, 3)</h2>
+<div class="stage">
+  <div class="layer l1">z-index: 1</div>
+  <div class="layer l2">z-index: 2</div>
+  <div class="layer l3">z-index: 3</div>
+</div>
+
+<h2>2. Đảo thứ tự: lớp đỏ lên trên cùng (z-index: 10)</h2>
+<div class="stage">
+  <div class="layer l1 top">z-index: 10</div>
+  <div class="layer l2">z-index: 2</div>
+  <div class="layer l3">z-index: 3</div>
+</div>
+
+<h2>3. Quan hệ cha/con (stacking context)</h2>
+<div class="stage">
+  <div class="parent p1">Cha 1 (z-index: 1)
+    <div class="child">Con z-index: 999</div>
+  </div>
+  <div class="parent p2">Cha 2 (z-index: 2)</div>
+</div>
+<p class="note">Con có z-index rất lớn nhưng vẫn nằm dưới Cha 2, vì con bị giới hạn trong stacking context của Cha 1 (z-index 1 &lt; 2).</p>
+<p class="back"><a href="../index.html">&larr; Danh sách Exercise Lab 07</a> &nbsp;|&nbsp; <a href="../../index.html">Trang chủ CSS nâng cao</a></p>
+</body>
+</html>

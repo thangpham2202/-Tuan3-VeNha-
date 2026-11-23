@@ -1,0 +1,15 @@
+.wrap { border: 3px solid #2980b9; background: #eaf4fc; padding: 8px; margin-bottom: 14px; }
+.wrap img { float: left; margin-right: 10px; }
+
+/* Tiêu đề xuống dòng bên dưới các phần tử float của khung trước */
+h2 { clear: both; }
+
+/* Cách 1: tạo block formatting context */
+.good1 { overflow: hidden; }
+
+/* Cách 2: clearfix */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

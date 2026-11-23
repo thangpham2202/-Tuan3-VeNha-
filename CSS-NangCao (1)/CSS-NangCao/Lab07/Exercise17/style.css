@@ -1,0 +1,16 @@
+.grid { display: flex; flex-wrap: wrap; gap: 16px; }
+figure { margin: 0; width: 200px; text-align: center; }
+figure img { display: block; width: 100%; }
+figcaption { font-size: 13px; padding-top: 4px; }
+
+/* Các bộ lọc CSS */
+.saturate { filter: saturate(2.5); }
+.gray { filter: grayscale(100%); }
+.contrast { filter: contrast(200%); }
+.bright { filter: brightness(50%); }
+.blur { filter: blur(3px); }
+.invert { filter: invert(100%); }
+.sepia { filter: sepia(100%); }
+.hue { filter: hue-rotate(90deg); }
+.opacity { filter: opacity(40%); }
+.combo { filter: grayscale(60%) contrast(120%) brightness(110%); }

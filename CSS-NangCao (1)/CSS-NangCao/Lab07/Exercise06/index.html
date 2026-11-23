@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 7.6 – Floating in a Container</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Exercise 7.6 – Floating in a Container</h1>
+<p>Khi mọi phần tử con bên trong container đều float, container bị <b>xẹp chiều cao</b> (height = 0) vì phần tử float không còn nằm trong document flow.</p>
+
+<h2>1. Không xử lý: khung bao bị xẹp</h2>
+<div class="wrap bad">
+  <img src="../images/p1.png" alt="" width="130">
+  <img src="../images/p2.png" alt="" width="130">
+  <img src="../images/p3.png" alt="" width="130">
+</div>
+
+<h2>2. Xử lý bằng overflow: hidden</h2>
+<div class="wrap good1">
+  <img src="../images/p1.png" alt="" width="130">
+  <img src="../images/p2.png" alt="" width="130">
+  <img src="../images/p3.png" alt="" width="130">
+</div>
+
+<h2>3. Xử lý bằng kỹ thuật clearfix (::after)</h2>
+<div class="wrap good2 clearfix">
+  <img src="../images/p4.png" alt="" width="130">
+  <img src="../images/p5.png" alt="" width="130">
+  <img src="../images/p6.png" alt="" width="130">
+</div>
+<p>Đoạn văn này nằm ngay sau các khung ở trên.</p>
+<p class="back"><a href="../index.html">&larr; Danh sách Exercise Lab 07</a> &nbsp;|&nbsp; <a href="../../index.html">Trang chủ CSS nâng cao</a></p>
+</body>
+</html>

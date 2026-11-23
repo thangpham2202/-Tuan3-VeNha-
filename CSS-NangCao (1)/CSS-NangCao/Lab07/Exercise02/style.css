@@ -1,0 +1,15 @@
+.demo { border: 1px dashed #999; padding: 10px; margin-bottom: 6px; }
+.box { width: 220px; background: #cfe8ff; border: 2px solid #4a90d9; padding: 14px; margin-bottom: 8px; }
+
+/* Dịch Box B so với vị trí gốc */
+.moved {
+  position: relative;
+  top: 20px;
+  left: 80px;
+  background: #ffd1d1;
+  border-color: #d64545;
+}
+
+.price { position: relative; top: -6px; color: #c0392b; font-weight: bold; }
+.up    { position: relative; top: -8px; }
+.down  { position: relative; top: 8px; }

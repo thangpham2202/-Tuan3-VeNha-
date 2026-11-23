@@ -1,0 +1,6 @@
+/* Áp dụng khi chiều rộng màn hình từ 768px trở lên */
+.logo { float: left; }
+.nav { float: right; }
+.menu li { float: left; }
+.card { float: left; width: 31.33%; margin-right: 3%; }
+.card:nth-child(3n) { margin-right: 0; }

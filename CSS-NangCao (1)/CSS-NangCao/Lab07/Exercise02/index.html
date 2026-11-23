@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise 7.2 – Relative Positioning</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Exercise 7.2 – Relative Positioning</h1>
+<p>Phần tử có <code>position: relative</code> được dịch chuyển so với <b>vị trí gốc</b> của nó. Chỗ trống ban đầu vẫn được giữ lại trong document flow nên các phần tử khác không bị xê dịch.</p>
+
+<h2>1. Ba hộp theo flow bình thường</h2>
+<div class="demo">
+  <div class="box">Box A</div>
+  <div class="box">Box B</div>
+  <div class="box">Box C</div>
+</div>
+
+<h2>2. Box B dùng position: relative; top: 20px; left: 80px</h2>
+<div class="demo">
+  <div class="box">Box A</div>
+  <div class="box moved">Box B (đã dịch)</div>
+  <div class="box">Box C</div>
+</div>
+<p class="note">Box C vẫn nằm yên vì chỗ cũ của Box B vẫn được giữ lại. Box B có thể đè lên Box C.</p>
+
+<h2>3. Dịch chuyển phần tử inline</h2>
+<p>Giá nay chỉ còn <span class="price">500.000đ</span> thay vì 800.000đ. Chữ <span class="up">nâng lên</span> và <span class="down">hạ xuống</span> bằng relative.</p>
+<p class="back"><a href="../index.html">&larr; Danh sách Exercise Lab 07</a> &nbsp;|&nbsp; <a href="../../index.html">Trang chủ CSS nâng cao</a></p>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.gallery { overflow: hidden; }
+.item {
+  float: left;
+  width: 200px;
+  margin: 0 12px 12px 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  text-align: center;
+}
+.item img { display: block; width: 100%; }
+.item p { margin: 0; padding: 8px; font-weight: bold; }

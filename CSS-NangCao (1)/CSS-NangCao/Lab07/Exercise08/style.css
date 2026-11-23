@@ -1,0 +1,10 @@
+.demo { border: 2px solid #34495e; padding: 8px; overflow: hidden; margin-bottom: 8px; }
+.f { float: left; width: 140px; margin-right: 8px; padding: 8px; color: #fff; font-weight: bold; }
+.f1 { height: 120px; background: #e74c3c; }
+.f2 { height: 80px;  background: #27ae60; }
+.f3 { height: 100px; background: #2980b9; }
+.r  { float: right; margin-right: 0; }
+
+.foot { background: #f1c40f; padding: 10px; }
+.cleared   { clear: both; }
+.clearleft { clear: left; }
